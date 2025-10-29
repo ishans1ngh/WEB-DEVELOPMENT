@@ -1,0 +1,14 @@
+h2{
+    text-align: center;
+}
+#box
+{
+    background-color: #20bDFF;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 30px;
+}
+li{
+    color: white;
+}

@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin: 8px 0 4px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+        .gender, .language {
+            margin-bottom: 10px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Password:</label>
+    <input type="password" name="password" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Phone No:</label>
+    <input type="tel" name="phone" required>
+
+    <div class="gender">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+    </div>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required>
+
+    <label>Address:</label>
+    <textarea name="address" rows="3" required></textarea>
+
+    <button type="submit"><a href="Accepted.html">Register</a></button>
+</form>
+
+</body>
+</html>
