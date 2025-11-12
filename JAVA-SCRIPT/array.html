@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            var fruits = ["Apple", "Banana", "Cherry"];
+            document.getElementById("demo").innerHTML =  fruits;
+            document.getElementById("demo1").innerHTML = "Length of array: " + fruits.length;
+            document.getElementById("demo3").innerHTML += "\nindex 0 is = "+ fruits.join(" :");
+            document.write(fruits[0]);
+            for (let i = 0; i < fruits.length; i++) {
+                document.write("<br>it is a " + fruits[i]);
+            }
+            document.write("<br>" + fruits.toString());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>JavaScript Arrays</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var i = 1;
+        var j = 1;
+        var txt = "";
+        for (var x = 0; x < 5; x++) {
+            txt += i + "<br>";
+            j = j * 10 + 1;
+            i = j * j;
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+
+</html>

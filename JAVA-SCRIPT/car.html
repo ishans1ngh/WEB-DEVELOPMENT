@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+             var car = {"name":"Ford", "cost":1969};
+            document.getElementById("demo").innerHTML =  "Car Name: " + car.name + ", Cost: " + car.cost;
+            for (var key in car) {
+                document.write("<br>" + key + ": " + car[key]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Form </title>
+    <meta charset="UTF-8">
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var msg = "";
+            if (name.length == 0) {
+                msg += "Username is required.\n";
+            }
+            if (password.length == 0) {
+                msg += "Password is required.\n";
+            }
+            if (password != document.getElementById("confirmPassword").value) {
+                msg += "Passwords do not match.\n";
+            }
+            else {
+                alert("Login successful!");
+            }
+            if (msg.length > 0) {
+                alert(msg);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Login Page</h1>
+        <form>
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for=password>Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+            <input type="submit" value="Submit" onclick="validateForm()">
+        </form>
+    </center>
+</body>
+
+</html>
